@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "donutah",
+  "version": "${version}",
+  "name": "DonutSMP AH Helper",
+  "description": "Sniper de subastas, calculadora de precio unitario y UI animada para DonutSMP.",
+  "authors": [
+    "CustomMod"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.donutah.DonutAhMod"
+    ],
+    "modmenu": [
+      "com.donutah.compat.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "donutah.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
